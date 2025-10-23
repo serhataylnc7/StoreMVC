@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="home-background">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold">Welcome to StoreMVC</h1>
+        <p class="lead">
+            Manage and explore your products efficiently with this simple ASP.NET Core web application.
+        </p>
+        <a class="btn btn-primary btn-lg me-2" asp-controller="Products" asp-action="Index">View Products</a>
+        <a class="btn btn-success btn-lg" asp-controller="Products" asp-action="Create">Add New Product</a>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Add Products</h5>
+                    <p class="card-text">
+                        Quickly add new products with name, brand, category, price, description and image.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Edit & Update</h5>
+                    <p class="card-text">
+                        Edit existing products easily and update all details including images.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Delete Products</h5>
+                    <p class="card-text">
+                        Remove unwanted products safely and manage your catalog efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
